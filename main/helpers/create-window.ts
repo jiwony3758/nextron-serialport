@@ -73,6 +73,16 @@ export const createWindow = (
   const win = new BrowserWindow({
     ...state,
     ...options,
+    // resizable: true,
+    // fullscreenable : true,
+    // autoHideMenuBar: true,
+    // maximizable : true,
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+      color: '#2f3241',
+      symbolColor: '#74b1be',
+      height: 40
+    },
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
