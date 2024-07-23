@@ -1,9 +1,15 @@
-appId: com.example.nextron
-productName: My Nextron App
-copyright: Copyright © 2018 Yoshihide Shiono
+appId: com.hironic.tools
+productName: Hironic Tools App
+copyright: Copyright © 2024 Hironic
+buildVersion: 1.0.0
 directories:
   output: dist
   buildResources: resources
+certificateFile: "./certificates/hironic.pfx"
+certificatePassword: "hironic00!"
+signingHashAlgoriths: "sha256"
+timeStampServer: "http://timestamp.digicert.com"
+publisherName: Hironic
 files:
   - from: .
     filter:

@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
-// const hironicColors = require('./styles/hironic/hironic-colors')
+const hironicColors = require('./renderer/styles/hironic/hironic-colors')
 
 module.exports = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx}',
+    './renderer/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     screen: {
@@ -12,8 +12,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        "background-rgb": "#BBBBBB"
-        // hironic: hironicColors,
+        "background-rgb": "#BBBBBB",
+        hironic: hironicColors,
         // use colors only specified
       },
     },
